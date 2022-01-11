@@ -1,0 +1,25 @@
+@use "../custom" as *;
+
+//GRADENT MIXIN
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+
+// ABSOUTE CENTER     -- use it on a item that is postion absolute and wants to center
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//TRANSITION PROPERTY
+
+@mixin transitionProperty {
+  transition-duration: 1000ms;
+  transition-property: all;
+}
